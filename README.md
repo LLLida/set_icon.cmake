@@ -1,6 +1,6 @@
 # set_icon.cmake
 ## Introduction
-Setting executable's icon is not straightforward. I tried to make it simple.<br/>
+Setting executable's icon from cmake is not straightforward. I tried to make it simple.<br/>
 This script only works on MS Windows and requires imagemagick if you use image format other than .ico.
 
 ## Usage
