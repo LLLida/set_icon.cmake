@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.15 FATAL_ERROR)
+project(helloworld)
+add_executable(helloworld main.cpp)
+include("../set_icon.cmake")
+set_icon(helloworld "bear.ico")
