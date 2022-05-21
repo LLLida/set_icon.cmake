@@ -42,7 +42,7 @@ function(set_icon TARGET path_to_icon)
 
 	# Write .res file
 	file(WRITE ${current-output-path}
-	  "IDR_MAINFRAME ICON ${path_to_icon}")
+	  "IDR_MAINFRAME ICON ${path_to_icon}\nIDI_ICON1 ICON DISCARDABLE ${path_to_icon}")
 	set_source_files_properties(${current-output-path} PROPERTIES GENERATED TRUE)
 	# Add .res file to sources of TARGET
 	target_sources(${TARGET} PRIVATE ${current-output-path})
